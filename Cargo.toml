@@ -1,14 +1,12 @@
 [package]
-name = "sphur"
-version = "0.3.0"
+name = "ocelot"
+version = "0.0.1"
 edition = "2024"
-description = "Sphūr (स्फुर्) is a SIMD™ accelerated PRNG library."
+description = "SIMD and GPU powered PRNG lib"
 license = "Apache-2.0"
-repository = "https://github.com/frozen-lab/sphur"
-readme = "README.md"
-keywords = ["prng", "simd", "random", "rng", "entropy"]
+repository = "https://github.com/frozen-lab/ocelot"
+keywords = ["prng", "random", "prng", "simd", "gpu"]
 categories = ["algorithms", "science", "simulation"]
-exclude = ["flake.nix", "flake.lock", "assets/", "profile.sh", ".local/", "scripts/", "randomness/"]
 
 [profile.release]
 lto = "fat"
@@ -26,8 +24,3 @@ codegen-units = 1
 debug-assertions = false
 overflow-checks = false
 strip = "none"
-
-[[bench]]
-name = "basic"
-path = "benchmarks/basic.rs"
-harness = false

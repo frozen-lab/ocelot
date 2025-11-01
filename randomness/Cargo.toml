@@ -1,9 +1,0 @@
-[package]
-name = "randomness"
-version = "0.1.0"
-edition = "2024"
-
-[dependencies]
-statrs = "0.18.0"
-sphur = {path = "../"}
-
